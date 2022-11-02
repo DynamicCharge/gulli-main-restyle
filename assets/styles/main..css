@@ -789,7 +789,7 @@ body.main-restyle {
 
 .main-prize._small .main-prize__name {
   min-height: 84px;
-  margin-top: 61px;
+  margin-top: auto;
   max-width: 211px; }
 
 .main-prize._small .main-prize__item {
@@ -822,7 +822,6 @@ body.main-restyle {
   position: relative;
   height: 390px;
   display: flex;
-  justify-content: end;
   align-items: center;
   flex-direction: column;
   overflow: hidden; }
@@ -876,6 +875,7 @@ body.main-restyle {
     opacity: 0; }
 
 .main-prize__name {
+  margin-top: auto;
   display: block;
   font-family: 'PF Agora Sans Pro';
   font-style: normal;
@@ -1137,9 +1137,9 @@ body.main-restyle {
   .main-prize__item._hover .main-prize__elem {
     top: -63px; }
   .main-prize._small .main-prize__name {
-    margin-top: 0; } }
+    margin-top: auto; } }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 900px) {
   .join__list {
     grid-template-columns: 1fr; }
   .join__item:not(:last-child)::after {
@@ -1156,6 +1156,14 @@ body.main-restyle {
     .choose__btn._join {
       justify-content: center; }
   .prize .container-restyle {
+    padding-bottom: 60px; }
+  .join .container-restyle {
+    padding-bottom: 65px; }
+  .choose__left {
+    padding-left: 0; }
+  .choose__btn {
+    font-size: 18px; }
+  .choose .container-restyle {
     padding-bottom: 60px; } }
 
 @media screen and (max-width: 550px) {
